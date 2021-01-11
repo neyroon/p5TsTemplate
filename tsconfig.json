@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
+    "mapRoot": "./sketch/",
+    "module": "None",
+    "noImplicitAny": true,
+    "outFile": "./build/build.js",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "rootDir": "./sketch/",
     "sourceMap": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
-    "rootDir": "src",
-    "moduleResolution": "node"
+    "sourceRoot": "./sketch/",
+    "target": "es5"
   }
 }
