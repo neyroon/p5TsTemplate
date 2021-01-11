@@ -1,23 +1,16 @@
 {
-  "name": "p5tstemplate",
+  "name": "p5-typescript-starter",
   "version": "1.0.0",
-  "description": "A template for a p5.js sketch using Typescript",
-  "main": "index.html",
+  "description": "Project to quickly get something working in [p5.js](https://p5js.org/) and [typescript](https://www.typescriptlang.org/)",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "@types/p5": "^0.9.1",
-    "p5": "^1.2.0"
+    "start": "run-p start-compile start-run",
+    "start-compile": "tsc --watch",
+    "start-run": "browser-sync start --server -w"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.2",
+    "@types/p5": "^0.9.1",
+    "browser-sync": "^2.26.13",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.1.3"
-  },
-  "keywords": [
-    "p5js",
-    "typescript"
-  ]
+  }
 }
